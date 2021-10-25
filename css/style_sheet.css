@@ -74,6 +74,18 @@ footer
     text-align: center;
 }
 
+.p_footer:hover
+{
+    transition-duration: 3s;
+    transform:scale(2,3);
+}
+
+.section_footer:hover
+{
+    transition-duration: 3s;
+    transform:scale(2,3);
+}
+
 h1
 {
     text-align: center;
@@ -83,4 +95,64 @@ h1
 {
     
     margin-left: 10px;
+}
+
+.resume_h2
+{
+    text-align: center; 
+}
+
+h2, h3
+{
+    text-decoration: underline;
+}
+
+.my_resume_main
+{
+    display: block;
+    height: 1000px;
+    width: 1000px;
+    border: 4px solid rgb(255, 255, 255);
+    padding: 10px;
+    margin: auto;
+}
+.resume_objective
+{
+    display: block;
+    height: 100px;
+    width: 75%;
+    border: 3px solid rgb(202, 173, 109);
+    margin: auto;
+    margin-top: auto;
+    padding: 5px;
+}
+
+.resume_prof_exper
+{
+    display: block;
+    height: 400px;
+    width: 75%;
+    border: 3px solid rgb(202, 173, 109);
+    margin: auto;
+    padding: 5px;
+}
+
+.resume_educ_exper
+{
+    display: block;
+    height: 200px;
+    width: 75%;
+    border: 3px solid rgb(202, 173, 109);
+    margin: auto;
+    padding: 5px;
+}
+
+.resume_extracurricular
+{
+    display: block;
+    height: 100px;
+    width: 75%;
+    border: 3px solid rgb(202, 173, 109);
+    margin: auto;
+    padding: 5px;
 }
