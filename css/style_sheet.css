@@ -4,30 +4,40 @@ body
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-nav
+a
 {
-    display: block;
-    height: 50px;
-    width: 50%;
-    text-align: center;
-    border: 3px solid rgb(0, 0, 0);
-    margin: auto;
+    text-decoration: none;
 }
 
-.nav
+nav
 {
-    display: inline-block;
-    height: 37px;
-    border: 3px solid rgb(245, 187, 29);
-    text-decoration: none;
-    /* text-align: center; */
-    color: rgb(0, 0, 0);
-    /* padding: 5px 5px 5px 5px; */
-    margin-top: 3.5px;
-    margin-right: 100px;
-    margin-left: 10px;
     
+    height: 60px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 45px;
+}
+
+nav a
+{  
+    display: inline-block;
+    height: 40px;
+    border: 3px solid rgb(245, 187, 29);
     font-size: 20px;
+    padding: 10px 10px 5px 10px;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    margin-left: 25px;
+    margin-right: 25px;
+    
+}
+
+nav a:hover
+{
+    color: rgb(255, 255, 255);
+    transition-duration: 2s;
+    transform: scale(1.5,2);
 }
 
 img
@@ -39,61 +49,54 @@ img
 blockquote
 {
     text-align: center;
+    font-size: 17px;
 }
 
-.resume
+.resume, .fun_facts
 {
-    font-size: 15px;
+    font-size: 20px;
     color: rgb(255, 255, 255);
-    border-color: rgba(0, 0, 0, 0);
-    margin: 0px;
-    padding: 0px;
-}
-
-.fun_facts
-{
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-    border-color: rgba(0, 0, 0, 0);
     margin: 0px;
     padding: 0px;
 }
 
 footer
 {
-    text-align: justify;
+    font-size: 20px;
+    padding: 10px;
 }
 
 .p_footer
 {
-    text-align: center;
+    margin-left: 10px;
+    float: left;
 }
 
 .section_footer
 {
-    text-align: center;
+    margin-right: 10px;
+    float: right;
 }
 
-.p_footer:hover
+i
 {
-    transition-duration: 3s;
-    transform:scale(2,3);
+    color:rgb(0, 0, 0);
 }
 
-.section_footer:hover
+i:hover
 {
-    transition-duration: 3s;
-    transform:scale(2,3);
+    color:rgb(202, 173, 109);
 }
 
 h1
 {
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .a_footer
-{
-    
+{ 
     margin-left: 10px;
 }
 
@@ -105,25 +108,17 @@ h1
 h2, h3
 {
     text-decoration: underline;
+    text-align: center;
 }
 
-.my_resume_main
-{
-    display: block;
-    height: 1000px;
-    width: 1000px;
-    border: 4px solid rgb(255, 255, 255);
-    padding: 10px;
-    margin: auto;
-}
 .resume_objective
 {
     display: block;
     height: 100px;
     width: 75%;
-    border: 3px solid rgb(202, 173, 109);
+    border: 5px solid rgb(202, 173, 109);
     margin: auto;
-    margin-top: auto;
+    margin-top: 30px;
     padding: 5px;
 }
 
@@ -132,27 +127,113 @@ h2, h3
     display: block;
     height: 400px;
     width: 75%;
-    border: 3px solid rgb(202, 173, 109);
+    border: 5px solid rgb(202, 173, 109);
     margin: auto;
+    margin-top: 15px;
     padding: 5px;
 }
 
 .resume_educ_exper
 {
     display: block;
-    height: 200px;
+    height: 225px;
     width: 75%;
-    border: 3px solid rgb(202, 173, 109);
+    border: 5px solid rgb(202, 173, 109);
     margin: auto;
+    margin-top: 15px;
     padding: 5px;
 }
 
 .resume_extracurricular
 {
     display: block;
-    height: 100px;
+    height: 125px;
     width: 75%;
-    border: 3px solid rgb(202, 173, 109);
+    border: 5px solid rgb(202, 173, 109);
     margin: auto;
+    margin-top: 15px;
     padding: 5px;
+}
+
+audio, video
+{
+    display: block;
+    margin: auto;
+}
+
+.index_section
+{
+    display: block;
+    height: 200px;
+    width: 75%;
+    margin:auto;
+    font-size: 20px;
+    text-align: justify;
+}
+
+label
+{
+    display: inline-block;
+    font-size: 20px;
+    height: 35px;
+    width: 333px;
+    margin-left: 580.1px;
+    text-align: center;
+}
+
+progress
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+}
+
+h4, h5{
+    text-align: center;
+}
+
+.p_objective
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+.p_professional
+{
+    text-align: center;
+}
+
+table
+{
+    margin: auto;
+}
+
+.p_resume
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+td
+{
+    text-align: center;
+}
+
+.favorite_book, .favorite_song
+{
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 3px solid rgb(245, 187, 29);
+}
+
+.favorite_movie_or_tv_show
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+figcaption
+{
+    margin-top: 10px;
 }
