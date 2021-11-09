@@ -237,3 +237,9 @@ figcaption
 {
     margin-top: 10px;
 }
+
+button
+{
+    display: block;
+    margin: auto;
+}
