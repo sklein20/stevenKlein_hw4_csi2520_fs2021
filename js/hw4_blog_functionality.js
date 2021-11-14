@@ -1,38 +1,64 @@
-// function buttonClicked()
-// {
-//     alert('Added Event Listener');
-// }
+let inputArea = document.createElement("input");
+    inputArea.setAttribute('type', 'text');
+    inputArea.style.width = "1000px";
+    inputArea.style.height = "100px";
+    inputArea.style.display = "block";
+    inputArea.style.margin = "auto";
+    inputArea.style.marginTop = "20px";
+    inputArea.style.border = "3px solid rgb(245, 187, 29)";
+    inputArea.style.fontSize = "20px";
 
-// let demo = document.addEventListener('click', buttonClicked);
+let replyArea = document.createElement("input");
+    replyArea.setAttribute('type', 'text');
+    replyArea.style.width = "1000px";
+    replyArea.style.height = "100px";
+    replyArea.style.display = "block";
+    replyArea.style.margin = "auto";
+    replyArea.style.marginTop = "20px";
+    replyArea.style.border = "3px solid rgb(245, 187, 29)";
+    replyArea.style.fontSize = "20px";
 
-// function idk()
-// {
-//     let btn = document.createElement("BUTTON");   // Create a <button> element
-//     btn.innerHTML = "CLICK ME";                   // Insert text
-//     document.body.appendChild(btn);
-// }
- 
+let btn = document.createElement("button");
+    btn.innerText = "Post Comment";
+    btn.style.marginLeft = "auto";
 
-//blogButton.addEventListener('click', buttonClicked);
-// let blogButton = document.querySelector("#blogButton")
-// console.log(blogButton);
-// blogButton = document.addEventListener('click', commentArea);
+let btn2 = document.createElement("button");
+    btn2.innerText = "Reply";
+    btn.style.marginLeft = "auto";
+
 blogButton.addEventListener('click', commentArea);
 
 function commentArea()
 {
-    document.querySelector('#main_section').style.backgroundColor= 'red';
-    // section = document.createElement("section");
-    // section.style.width = "100px";
-    // section.style.height = "100px";
-    // section.style.background = "red";
-    // section.style.color = "white";
-    // section.innerHTML = "Hello";
-    // section.style.margin = "auto";
-    // document.body.appendChild(section);
+    let foot = document.querySelector('#footer');
+    document.body.insertBefore(inputArea, foot);
+    document.body.insertBefore(btn, foot);
 }
 
-// blogButton.addEventListener('click', commentArea);
-// btn = document.addEventListener('click', commentArea);
-// document.getElementById("main_section").appendChild(section);
+btn.addEventListener('click', postComment);
 
+function postComment()
+{
+    let art = document.querySelector('#contentDescription');
+    art.appendChild(inputArea);
+    pBlog.style.marginBottom = "20px";
+    inputArea.style.marginTop = "40px";
+    inputArea.style.marginRight = "50px";
+    art.appendChild(btn2);
+    btn2.style.float = "right";
+    btn.style.display = "none";
+    let blg = document.querySelector('#blogButton');
+    blg.style.marginTop = "150px";
+}
+
+btn2.addEventListener('click', replyComment);
+
+function replyComment()
+{
+    let foot = document.querySelector('#footer');
+    let man = document.querySelector('#main');
+    let blg = document.querySelector('#blogButton');
+    document.body.insertBefore(replyArea, foot);
+    document.body.insertBefore(btn, foot);
+    btn.style.display = "block";    
+}
